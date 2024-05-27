@@ -20,12 +20,12 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.2.4'
 
       - name: Install dependencies
         run: |
-          gem install bundler -v 2.2.22
-          bundle _2.2.22_ install
+          gem install bundler -v 2.4.19
+          bundle _2.4.19_ install
 
       - name: Run tests
-        run: bundle _2.2.22_ exec rspec
+        run: bundle _2.4.19_ exec rspec
